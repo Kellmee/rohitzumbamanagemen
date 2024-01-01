@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participant CRUD</title>
+</head>
+<body>
+    <h2>Create Participant</h2>
+    <form action="/rohitzumbamanagemen/participant" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="phone_number">Phone Number:</label>
+        <input type="tel" id="phone_number" name="phone_number" required><br>
+
+        <label for="email_address">Email Address:</label>
+        <input type="email" id="email_address" name="email_address" required><br>
+
+        <button type="submit">Create Participant</button>
+    </form>
+
+    <h2>Update Participant</h2>
+    <form action="/rohitzumbamanagemen/participant" method="post">
+        <label for="participant_id">Participant ID:</label>
+        <input type="text" id="participant_id" name="id" required><br>
+
+        <label for="updated_name">Updated Name:</label>
+        <input type="text" id="updated_name" name="name" required><br>
+
+        <label for="updated_phone_number">Updated Phone Number:</label>
+        <input type="tel" id="updated_phone_number" name="phone_number" required><br>
+
+        <label for="updated_email_address">Updated Email Address:</label>
+        <input type="email" id="updated_email_address" name="email_address" required><br>
+
+        <button type="submit">Update Participant</button>
+    </form>
+
+    <h2>Delete Participant</h2>
+    <form action="/rohitzumbamanagemen/participant" method="post">
+        <label for="delete_participant_id">Participant ID:</label>
+        <input type="text" id="delete_participant_id" name="id" required><br>
+
+        <button type="submit">Delete Participant</button>
+    </form>
+</body>
+</html>

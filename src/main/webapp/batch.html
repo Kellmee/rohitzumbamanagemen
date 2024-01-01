@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batch CRUD</title>
+</head>
+<body>
+    <h2>Create Batch</h2>
+    <form action="/rohitzumbamanagemen/batch" method="post">
+    <label for="batch_name">Batch Name:</label>
+    <input type="text" id="batch_name" name="name" required><br>
+
+    <button type="submit">Create Batch</button>
+</form>
+
+    <h2>Update Batch</h2>
+    <form action="/rohitzumbamanagemen/batch" method="post">
+
+    <label for="batch_id">Batch ID:</label>
+    <input type="text" id="batch_id" name="id" required><br>
+
+    <label for="updated_batch_name">Updated Batch Name:</label>
+    <input type="text" id="updated_batch_name" name="name" required><br>
+
+    <button type="submit">Update Batch</button>
+</form>
+
+    <h2>Delete Batch</h2>
+<form action="/rohitzumbamanagemen/batch" method="post">
+
+    <label for="delete_batch_id">Batch ID:</label>
+    <input type="text" id="delete_batch_id" name="id" required><br>
+
+    <button type="submit">Delete Batch</button>
+</form>
+</html>
